@@ -8,6 +8,7 @@ export default function MoviePage() {
       {movieDB.map((movie, i) => (
         <MovieRow
           id={movie.id}
+          key={movie.id}
           title={movie.title}
           detail={movie.detail}
           rating={movie.rating}
